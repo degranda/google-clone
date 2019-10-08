@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ----  Header  ---- */
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 50px;
+}
+header nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav div {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav div a {
+    margin-right: 10px;
+    color: #000000de;
+}
+header nav div .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+header nav div a .img-user {
+    border-radius: 50%;
+}
+
+/* ----  Main content  ----  */
+main {
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+main .main-logo {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+main .main-logo img {
+    width: 300px;
+}
+main .main-input {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    margin-bottom: 35px;
+}
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input {
+    width: 450px;
+    height: 40px; 
+    border: none;
+    outline: none;
+}
+main .main-input .search-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+main .main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+main .main-buttons {
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: center; 
+}
+main .main-buttons button {
+    height: 36px;
+    line-height: 27px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5F6368;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+main .main-buttons button {
+    margin-right: 15px;
+}
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+/* ----  Footer  ---- */
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+footer div {
+    margin: 10px;
+}
+footer div a {
+    margin: 10px;
+    color: #5f6368;
+}
